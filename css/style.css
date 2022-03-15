@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    z-index: 999;
+    box-shadow: 0 0 5px rgb(226, 216, 216);
+}
+nav{
+width: 90%;
+height: 90%;
+margin: auto;
+position: relative;
+}
+ nav:first-of-type .logo{
+    width: 10%;
+    height: 90%;
+    position: absolute;
+    overflow: hidden;
+    top: 5px;
+    left: 0;
+    transition: all 1s .5s linear;
+    background: no-repeat url(../img/pic.png) left/contain;
+} 
+.logo:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+nav:last-of-type div{
+    width: 55%;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    padding: 10px;
+}
+nav:last-of-type div ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+nav:last-of-type div ul li{
+    line-height: 40px;
+   font-size: 18px;
+   letter-spacing: 2px;
+   border-radius: 10px;
+   transition: 1s 0s linear;  
+   transition-property: background-color color;
+}
+ul li:hover{
+    background-color:rgb(240, 12, 58) ;
+    color: rgb(255, 255, 255);
+    border: 1px groove black;
+    cursor: pointer;
+}
+span ~ li {
+    background-color: rgb(240, 56, 92);
+    border-radius: 15px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    color: white;
+    padding: .5px 10px;
+    transition:  .5s 0s linear;
+    transition-property: background-color color;
+}
+span ~ li:hover{
+    color: black;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    border: 1px groove black;
+}
+/*   =====sec01====*/
+.sec01{
+    width: 90%;
+    height: 700px;
+    margin: auto;
+    background: no-repeat url(../img/irene-davila-9Y5Wk7favpE-unsplash.jpg) top center/cover;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    box-shadow: 0 0 25px rgb(226, 216, 216);
+}
+.sec01 > div{
+    width: 60%;
+    background-color: transparent;
+    height: 45%;
+    margin-top: 380px;
+    transition: all 1.3s .05s linear;
+    box-shadow: 0 0 5px rgb(128, 124, 124); 
+}
+.sec01 > div:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.sec01 > div > h1{
+font-size: 45px;
+color: white;
+text-align: center;
+margin-top: 15px;
+line-height: 90px;
+}
+.sec01 > div > p{
+    color: white;
+    font-size: 15px;
+    text-justify: auto;
+    line-height: 25px;
+}
+
+/* ======= sec02====*/
+
+.sec02{
+  width: 90%;
+  height: 850px;
+  background-color: rgb(247, 243, 243);
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  box-shadow: 0 0 5px rgb(128, 124, 124);
+}
+.sec02 > div img {
+    width: 45%;
+    height: 60%;
+    margin: 10px 10px ;
+    z-index: 5;
+    position: absolute;
+    transition: all 0.3s .03s linear;
+    box-shadow: 0 0 25px rgb(184, 182, 178);
+}
+.sec02 > div img:hover{
+    z-index: 20;
+    box-shadow: 0 0 50px rgb(102, 101, 100);
+    cursor: pointer;
+}
+.sec02 .about{
+    width: 60%;
+    height: 40%;
+    background-color: white;
+    margin-left: 545px ;
+    margin-top: 300px;
+    z-index: 10;
+    float: right;
+    transition: all 0.3s .03s linear;
+    position: absolute;
+    box-shadow: 0 0 25px rgb(184, 182, 178);
+}
+.sec02 .about:hover{
+    box-shadow: 0 0 50px rgb(102, 101, 100);
+    cursor: pointer;
+    /* z-index: 1; */
+
+}
+.sec02 .about h1{
+    text-align: center;
+    margin: 30px ;
+    font-size: 40px;
+}
+.sec02 .about p{
+    text-justify: auto;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* ======= sec03====*/
+
+.sec03{
+    background: no-repeat url(../img/manik-rathee-a8YV2C3yBMk-unsplash.jpg) top center/cover;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgb(128, 124, 124);
+}
+.sec03 > div {
+    width: 60%;
+    height: 60%;
+    /* border: 1px solid black; */
+    float: right;
+    margin: 50px 60px ;
+    background-color: transparent;
+    box-shadow: 0 0 3px black;
+    transition: all .9s .03s linear;
+
+}
+.sec03 > div:hover{
+    box-shadow: 0 0 50px rgb(102, 101, 100);
+    cursor: pointer;
+
+}
+.sec03 > div p {
+    margin: 20px 20px ;
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    font-weight: 500;
+}
+.sec03 > div button{
+    float: right;
+    margin: 25px 70px;
+    color: white;
+    width: 135px;
+    height: 40px;
+    border-radius: 15px;
+    background-color:  rgb(240, 56, 92) ;
+    font-size: 20px;
+    transition: all .9s 0s linear;
+}
+.sec03 > div button:hover{
+    color: black;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    border: 1px groove black;
+
+}
+
+/* ======= sec04====*/
+
+.sec04{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    box-shadow: 0 0 5px rgb(224, 218, 218);
+}
+.box{
+    clip-path: circle(120px);
+    transition: all 2s 0s linear;
+
+}
+.box:hover{
+    clip-path: circle(200px);
+    box-shadow: 0 0 20px rgb(97, 94, 91);
+    cursor: pointer;
+
+}
+.sec04 .box h3{
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+/* ======= sec05====*/
+
+/* .sec05{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    font-size: 20px;
+    box-shadow: 0 0 2px rgb(224, 218, 218);
+} */
+footer{
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 0 1px rgb(202, 199, 199);
+}
+
+
